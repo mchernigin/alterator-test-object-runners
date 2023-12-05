@@ -1,0 +1,6 @@
+[Altertor Entry]
+Type=Object
+Name=test_object2
+DisplayName=Test object for test-interface2
+DisplayName[ru_RU]=Тут на русском должно быть "Test object for test-interface2"
+Interface=ru.basealt.alterator.test-interface2

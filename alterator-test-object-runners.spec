@@ -24,14 +24,29 @@ Description for alterator-test-object-runners...
 %install
 mkdir -p %buildroot%_libexecdir/alterator/scripts
 mkdir -p %buildroot%_datadir/applications
+mkdir -p %buildroot%_datadir/backends
+mkdir -p %buildroot%_datadir/alterator/objects/test-object1
+mkdir -p %buildroot%_datadir/alterator/objects/test-object2
+
+install -v -p -m 666 -D test-object1.backend %buildroot%_datadir/alterator/backends
+install -v -p -m 666 -D test-object1.alterator %buildroot%_datadir/alterator/objects/test-object1
 install -v -p -m 666 -D test-runner1.py %buildroot%_libexecdir/alterator/scripts
 install -v -p -m 666 -D test-runner1.desktop %buildroot%_datadir/applications
+
+install -v -p -m 666 -D test-object2.backend %buildroot%_datadir/alterator/backends
+install -v -p -m 666 -D test-object2.alterator %buildroot%_datadir/alterator/objects/test-object2
 install -v -p -m 666 -D test-runner2.py %buildroot%_libexecdir/alterator/scripts
 install -v -p -m 666 -D test-runner2.desktop %buildroot%_datadir/applications
 
 %files
 %_libexecdir/alterator/scripts/*.py
+
+%_datadir/alterator/objects/test-object1/test-object1.alterator
+%_datadir/alterator/backends/test-object1.backend
 %_datadir/applications/test-runner1.desktop
+
+%_datadir/alterator/objects/test-object2/test-object2.alterator
+%_datadir/alterator/backends/test-object2.backend
 %_datadir/applications/test-runner2.desktop
 
 %changelog

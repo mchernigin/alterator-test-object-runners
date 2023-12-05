@@ -1,0 +1,10 @@
+[Manager]
+module_name = executor
+node_name = test_object2
+thread_limit = 1
+
+interface_name = test_interface2
+
+[Info]
+execute = cat /usr/share/alterator/objects/test-object2/test-object2.alterator
+action_id = Info
