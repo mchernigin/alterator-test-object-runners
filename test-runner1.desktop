@@ -7,7 +7,7 @@ Terminal=true
 Name=Test runner for test-interface1
 Name[ru]=Тут на русском "Test runner for test-interface1"
 
-[Altertor Entry]
+[Alterator Entry]
 Type=Application
 Name=test-runner1
 DisplayName=Test Runner for test-interface1

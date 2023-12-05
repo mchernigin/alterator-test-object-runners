@@ -24,7 +24,7 @@ Description for alterator-test-object-runners...
 %install
 mkdir -p %buildroot%_libexecdir/alterator/scripts
 mkdir -p %buildroot%_datadir/applications
-mkdir -p %buildroot%_datadir/backends
+mkdir -p %buildroot%_datadir/alterator/backends
 mkdir -p %buildroot%_datadir/alterator/objects/test-object1
 mkdir -p %buildroot%_datadir/alterator/objects/test-object2
 
