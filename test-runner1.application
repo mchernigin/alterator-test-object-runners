@@ -1,16 +1,9 @@
-[Desktop Entry]
-Type=Application
-Categories=X-ALTLinux-Alterator
-Exec=echo "run me from Alterator Browser"
-Icon=basealt
-Terminal=true
-Name=Test runner for test-interface1
-Name[ru]=Тут на русском "Test runner for test-interface1"
-
 [Alterator Entry]
 Type=Application
 Name=test-runner1
 DisplayName=Test Runner for test-interface1
 DisplayName[ru_RU]=Тут на русском должно быть "Test Runner for test-interface1"
+Comment=Application running alterator objects with test-interface1
+Comment[ru_RU]=Приложение запускающее объекты альтератора с интерфейсов test-interface1
 Exec=/usr/lib/alterator/scripts/test-runner1.py %o %i
 Interface=ru.basealt.alterator.test-interface1

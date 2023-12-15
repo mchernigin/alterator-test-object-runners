@@ -1,10 +1,10 @@
-[Manager]
-module_name = executor
-node_name = test_object1
-thread_limit = 1
-
-interface_name = test_interface1
+[Alterator Entry]
+Type = Backend
+Module = executor
+Name = test_object1
+Interface = test_interface1
 
 [Info]
 execute = cat /usr/share/alterator/objects/test-object1/test-object1.alterator
 action_id = Info
+
