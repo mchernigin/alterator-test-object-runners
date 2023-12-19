@@ -1,0 +1,8 @@
+polkit.addRule(function(action, subject) {
+    if (action.id == "ru.basealt.alterator.test-interface1.Info") {
+        return polkit.Result.YES;
+    }
+    if (action.id == "ru.basealt.alterator.test-interface2.Info") {
+        return polkit.Result.YES;
+    }
+});

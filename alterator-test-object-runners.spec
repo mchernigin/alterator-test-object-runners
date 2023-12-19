@@ -27,6 +27,7 @@ mkdir -p %buildroot%_datadir/alterator/applications
 mkdir -p %buildroot%_datadir/alterator/backends
 mkdir -p %buildroot%_datadir/alterator/objects/test-object1
 mkdir -p %buildroot%_datadir/alterator/objects/test-object2
+mkdir -p %buildroot%_sysconfdir/polkit-1/rules.d
 
 install -v -p -m 644 -D test-object1.backend %buildroot%_datadir/alterator/backends
 install -v -p -m 644 -D test-object1.alterator %buildroot%_datadir/alterator/objects/test-object1
@@ -38,6 +39,8 @@ install -v -p -m 644 -D test-object2.alterator %buildroot%_datadir/alterator/obj
 install -v -p -m 755 -D test-runner2.py %buildroot%_libexecdir/alterator/scripts
 install -v -p -m 644 -D test-runner2.application %buildroot%_datadir/alterator/applications
 
+install -v -p -m 644 -D 49-alterator-test-objects.rules %buildroot%_sysconfdir/polkit-1/rules.d
+
 %files
 %_libexecdir/alterator/scripts/*.py
 
@@ -48,6 +51,8 @@ install -v -p -m 644 -D test-runner2.application %buildroot%_datadir/alterator/a
 %_datadir/alterator/objects/test-object2/test-object2.alterator
 %_datadir/alterator/backends/test-object2.backend
 %_datadir/alterator/applications/test-runner2.application
+
+%_sysconfdir/polkit-1/rules.d/49-alterator-test-objects.rules
 
 %changelog
 * Wed Dec 05 2023 Michael Chernigin <chernigin@altlinux.org> 0.0.1-alt1

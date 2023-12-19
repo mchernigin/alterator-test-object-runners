@@ -2,8 +2,9 @@
 Type = Backend
 Module = executor
 Name = test_object2
-Interface = test_interface1
+Interface = test_interface2
 
 [Info]
 execute = cat /usr/share/alterator/objects/test-object2/test-object2.alterator
+stdout_bytes = enabled
 action_id = Info
