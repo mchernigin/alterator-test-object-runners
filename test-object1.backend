@@ -6,5 +6,6 @@ Interface = test_interface1
 
 [Info]
 execute = cat /usr/share/alterator/objects/test-object1/test-object1.alterator
+stdout_strings = enabled
 action_id = Info
 
