@@ -5,5 +5,5 @@ DisplayName=Test Runner for test_interface2
 DisplayName[ru_RU]=Тут на русском должно быть "Test Runner for test_interface2"
 Comment=Application running alterator objects with test_interface2
 Comment[ru_RU]=Приложение запускающее объекты альтератора с интерфейсов test_interface2
-Exec=/usr/lib/alterator/scripts/test-runner2.py %o %i
+Exec=/usr/lib/alterator-test-object-runners/test-runner2.py %o %i
 Interface=ru.basealt.alterator.test_interface2
